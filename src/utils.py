@@ -2,11 +2,11 @@ import json
 from datetime import datetime
 
 
-def display_last_operations():
+def display_last_operations(file_name):
     """
     Считывает данные из файла
     """
-    with open("operations.json", "r", encoding='utf-8') as file:
+    with open(file_name, "r", encoding='utf-8') as file:
         data_dict = json.load(file)
         return data_dict
 
