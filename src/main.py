@@ -2,7 +2,7 @@ import re
 
 from src.utils import display_last_operations, sort_execute, sort_on_data_operations, get_last_five_operations
 
-display_last = display_last_operations()
+display_last = display_last_operations("operations.json")
 get_executed = sort_execute(display_last)
 data_sort = sort_on_data_operations(get_executed)
 last_five_operations = get_last_five_operations(data_sort)
